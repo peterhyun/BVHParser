@@ -108,6 +108,12 @@ int main(int argc, char **argv)
 	
 	while (!glfwWindowShouldClose(window))
 	{
+		
+		// render
+		// ------
+		glClearColor(0.9f, 0.9f, 0.9f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		
 		// per-frame time logic
 		// --------------------
 		VISITED = new unsigned int[bvh.boneIDCounter];
@@ -125,11 +131,6 @@ int main(int argc, char **argv)
 
 		// update settings here
 		while (deltaTime2 >= 1.0) {
-			// render
-			// ------
-			glClearColor(0.9f, 0.9f, 0.9f, 1.0f);
-			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
 			shader.setVec3("light.direction", 0.0f, -0.1f, 0.0f);
 			shader.setVec3("viewPos", camera.Position);
 			shader.setVec3("light.ambient", 0.3f, 0.3f, 0.2f);
