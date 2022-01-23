@@ -1,0 +1,2 @@
+This directory is for adding any texture files, obj files, txt files, fbx files, etc of your choice. (Files not necessary for 'building' the project)
+You may need to modify CMakeLists.txt to make it compatible depending on the file type you add in this directory.
