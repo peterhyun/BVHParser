@@ -1,3 +1,36 @@
+This is a simple BVH Parser based on OpenGL and GLFW. I edited Kevin Fung's ```Glitter``` repository to make this repository self-contained.
+
+## How to build and run.
+
+1. Download this repository and go to AnimationFramework/Build directory.
+
+```
+git clone --recursive https://github.com/peterhyun/BVHParser
+cd BVHParser
+cd Build
+```
+
+2. Make a project/solution file or makefile depending on your platform. I used Microsoft Windows, Visual Studio 2019.
+
+```
+# UNIX Makefile
+cmake ..
+
+# Mac OSX
+cmake -G "Xcode" ..
+
+# Microsoft Windows
+cmake -G "Visual Studio 16 2019" ..
+...
+```
+
+3. Build the project on your platform accordingly.
+
+4. Run the produced executable file with with the fbx file name you want to load as the command line input.
+```./Glitter $(bvh file name).bvh```
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 # [Glitter](http://polytonic.github.io/Glitter/)
 ![Screenshot](http://i.imgur.com/MDo2rsy.jpg)
 
