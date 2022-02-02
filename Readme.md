@@ -1,5 +1,5 @@
 # BVHParser
-> September 2019 Jeehon Hyun
+> September 2018 Jeehon Hyun
 
 This is a simple BVH Parser & Player based on OpenGL and GLFW.
 
