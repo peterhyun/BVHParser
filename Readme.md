@@ -5,7 +5,7 @@ This is a simple BVH Parser based on OpenGL and GLFW. I edited Kevin Fung's ```G
 1. Download this repository and go to AnimationFramework/Build directory.
 
 ```
-git clone --recursive https://github.com/peterhyun/BVHParser
+git clone --recursive https://github.com/peterhyun/BVHParser.git
 cd BVHParser
 cd Build
 ```
