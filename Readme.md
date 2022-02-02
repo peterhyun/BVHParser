@@ -35,7 +35,7 @@ cmake -G "Visual Studio 16 2019" ..
 While building in the Visual Studio 2019 IDE, ```Treat Warning As Errors``` had to be unticked in the project file property settings for building the Assimp library.
 ![DoNotTreatWarningAsErrors](screenshots/DoNotTreatWarningsAsErrors.jpg)
 
-4. Go to the directory ```Build/Glitter/Debug``` run the produced executable file with with the fbx file name you want to load as the command line argument.
+4. Go to the directory ```Build/Glitter/Debug``` run the produced executable file with with the bvh file name you want to load as the command line argument.
 ```./Glitter $(bvh file name).bvh```
 
 ## Directory Structure & Explanation
