@@ -62,7 +62,7 @@ While building in the Visual Studio 2019 IDE, ```Treat Warning As Errors``` had 
 ├── CMakeLists.txt  
 └── Readme.md  
 
-TBA
+A BVH file is written in a tree structure, where the pelvis bone is usually the root node. The ```BVHParser``` class implemented in ```BVHParser.h``` parses this file into a tree structure, where each node data is stored in ```Bone``` instances whose class is written in ```BoneForMotionData.h```. Furthermore, ```BVHParser``` also stores all the frame data of all nodes in its 1D ```motion``` array sequentially. So when actually using the data for rendering, the program will read the a certain segment of this array for the corresponding frame and bone. ```BVHParser``` also uses a DFS (Depth-First-Search) approach to calculate a child node's global transformation matrix starting from the root node. This approach can be observed in ```BVHParser::setMotion```.
 
 The vertex shader and fragment shader are simple glsl code used to render the green model on screen, so I won't go over it here.
 
